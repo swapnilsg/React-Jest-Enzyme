@@ -14,4 +14,8 @@ test('Top Level App Component', () => {
   it('Should contain an h1 tag with text "My App"', () => {
     expect(app.contains(<h1>My App</h1>)).toBe(true)
   })
+
+  it('Should contain one UserList Component', () => {
+    expect(app.find('.userList').length).toEqual(1)
+  })
 })
